@@ -15,6 +15,7 @@
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
 </head>
 <body data-screen-label="GreenSky — Home (v3 clean)">
 
@@ -89,7 +90,7 @@
         <article class="principle">
           <span class="principle__n">Data</span>
           <h3>Signal from noise.</h3>
-          <p>Telemetry, geospatial, market data, weather, and prices — and the platforms that turn streams into decisions in milliseconds.</p>
+          <p>Telemetry, geospatial, and market data, weather, and prices — and the platforms that turn streams into decisions in milliseconds.</p>
         </article>
         <article class="principle">
           <span class="principle__n">AI</span>
@@ -131,51 +132,57 @@ investing </h2>
       <div class="companies">
 
         <a class="company is-link" href="https://get.cortexintel.com" target="_blank" rel="noopener">
-          <img class="company__logo-img" src="uploads/Cortex.png" alt="Cortex">
-          <span class="company__sector">Buildings · Efficiency</span>
-          <span class="company__desc">Energy &amp; carbon intelligence for commercial real estate portfolios.</span>
+          <div class="company__logo-wrap"><img class="company__logo-img" src="uploads/Cortex.png" alt="Cortex"></div>
+          <span class="company__sector">Building Efficiency</span>
+          <span class="company__desc">Software to streamline and enhance energy management in commercial real estate</span>
         </a>
 
-        <a class="company is-link" href="https://www.splight.com" target="_blank" rel="noopener">
-          <img class="company__logo-img" src="uploads/splight.svg" alt="Splight">
-          <span class="company__sector">Grid capacity</span>
-          <span class="company__desc">AI-defined grid software that unlocks transmission capacity in real time.</span>
+        <a class="company is-link" href="https://www.sightlineclimate.com" target="_blank" rel="noopener">
+          <div class="company__logo-wrap"><img class="company__logo-img is-wide" src="uploads/currence-cropped.png" alt="currence"></div>
+          <span class="company__sector">Market intelligence</span>
+          <span class="company__desc">AI-powered market intelligence for energy innovation</span>
+        </a>
+
+        <a class="company is-link" href="https://www.derapi.com" target="_blank" rel="noopener">
+          <div class="company__logo-wrap"><img class="company__logo-img is-chip is-wide" src="uploads/derapi.png" alt="Derapi"></div>
+          <span class="company__sector">DER Connectivity</span>
+          <span class="company__desc">Universal connectivity interface to monitor and control distributed energy resources</span>
         </a>
 
         <a class="company is-link" href="https://www.pani.global" target="_blank" rel="noopener">
-          <img class="company__logo-img" src="uploads/pani.png" alt="Pani">
+          <div class="company__logo-wrap"><img class="company__logo-img" src="uploads/pani-49b80bf4.png" alt="Pani"></div>
           <span class="company__sector">Industrial water</span>
           <span class="company__desc">Operational intelligence for industrial water and wastewater treatment.</span>
         </a>
 
         <a class="company is-link" href="https://www.plugmotors.com" target="_blank" rel="noopener">
-          <img class="company__logo-img" src="uploads/Plug.svg" alt="Plug">
+          <div class="company__logo-wrap"><img class="company__logo-img is-small" src="uploads/Plug.svg" alt="Plug"></div>
           <span class="company__sector">EV marketplace</span>
-          <span class="company__desc">Marketplace and software for used EV inventory, financing, and resale.</span>
+          <span class="company__desc">Marketplace for buying and selling electric vehicles</span>
         </a>
 
-        <a class="company is-link" href="https://www.sightlineclimate.com" target="_blank" rel="noopener">
-          <img class="company__logo-img is-chip" src="uploads/currence.png" alt="currence">
-          <span class="company__sector">Market intelligence</span>
-          <span class="company__desc">Market intelligence for climate tech — capital flows, deals, and signal.</span>
+        <a class="company is-link" href="https://www.splight.com" target="_blank" rel="noopener">
+          <div class="company__logo-wrap"><img class="company__logo-img" src="uploads/splight.svg" alt="Splight"></div>
+          <span class="company__sector">Grid capacity</span>
+          <span class="company__desc">Machine learning software to unlock capacity on congested electric grids</span>
         </a>
 
         <a class="company is-link" href="https://www.tyba.ai" target="_blank" rel="noopener">
-          <img class="company__logo-img is-chip" src="uploads/tyba.png" alt="Tyba">
+          <div class="company__logo-wrap"><img class="company__logo-img" src="uploads/tyba-66fed676.png" alt="Tyba"></div>
           <span class="company__sector">Battery storage</span>
           <span class="company__desc">Trading and optimization software for battery storage and renewables.</span>
         </a>
 
         <div class="company is-stealth">
-          <span class="company__logo">Stealth</span>
+          <div class="company__logo-wrap"><span class="company__logo">Stealth</span></div>
           <span class="company__sector">Geothermal</span>
           <span class="company__desc">AI-driven exploration for next-generation geothermal resources.</span>
         </div>
 
         <div class="company is-stealth">
-          <span class="company__logo">Stealth</span>
+          <div class="company__logo-wrap"><span class="company__logo">Stealth</span></div>
           <span class="company__sector">Critical minerals</span>
-          <span class="company__desc">Software for siting, permitting, and operating critical mineral supply.</span>
+          <span class="company__desc">Machine learning software to optimize critical mineral extraction</span>
         </div>
 
       </div>
@@ -191,7 +198,7 @@ investing </h2>
           <h2 class="h-section">Two partners. One conviction.</h2>
         </div>
         <div class="team__photo">
-          <img src="assets/team-partners.jpeg" alt="GreenSky partners Gordon Burnes and David Zug" loading="lazy">
+          <img src="uploads/David and Gordon no lanyards.png" alt="GreenSky partners Gordon Burnes and David Zug" loading="lazy">
         </div>
       </div>
 
@@ -217,7 +224,7 @@ investing </h2>
             <span class="partner__role">PARTNER · BOSTON</span>
           </div>
           <p class="partner__bio">
-            20 years investing in growth technology companies.  Former environmental engineer
+            20 years investing in growth technology companies.  Former environmental scientist
           </p>
           <div class="partner__links">
             <a href="https://www.linkedin.com/in/davidzug" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -235,7 +242,7 @@ investing </h2>
       <div class="contact__inner">
         <div>
           <span class="eyebrow">Contact</span>
-          <h2 class="h-section" style="margin-top:24px;">Building at the intersection of energy and innovation?</h2>
+          <h2 class="h-section" style="margin-top:24px;">Building at the intersection of energy, data, and innovation?</h2>
         </div>
         <div>
           <a class="contact__email" href="mailto:info@greensky.ai">
@@ -255,7 +262,7 @@ investing </h2>
       <div class="footer__top">
         <div class="footer__brand">
           <span class="word">GreenSky</span>
-          <p>An early-stage venture firm investing in great businesses at the intersection of energy and technology innovation.</p>
+          <p>Investing in great businesses at the intersection of energy and technology innovation.</p>
         </div>
         <div class="footer__col">
           <h4>Site</h4>
@@ -282,7 +289,7 @@ investing </h2>
       </div>
       <div class="footer__legal">
         <span>© 2026 GreenSky Capital</span>
-        <span>v 3.0 · 06.2026</span>
+        <span>2026</span>
       </div>
     </div>
   </footer>
@@ -303,6 +310,9 @@ investing </h2>
       window.addEventListener('resize', update);
     })();
   </script>
+
+  <div id="tweaks-root"></div>
+  <script type="text/babel" src="tweaks-app.jsx"></script>
 
 </body>
 </html>
